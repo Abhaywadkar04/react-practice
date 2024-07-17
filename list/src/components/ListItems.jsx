@@ -1,14 +1,8 @@
 import React from 'react'
 
-function ListItems() {
-
-  //const foodlist=["burger","pizza","kfc","starbucks","kepsa"];
-  const foodlist=[];
-
-  if(foodlist.length===0){
-    return <h1>no food available</h1>
-  }
-
+function ListItems(pros) {
+  const foodlist=pros.items;
+ 
   return (
     <>
     <h1>foood items</h1>

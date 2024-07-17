@@ -6,12 +6,12 @@ import Heading from './components/Heading'
 import ListItems from './components/ListItems'
 import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
-  const [count, setCount] = useState(0)
+  const foodlist=["burger","pizza","kfc","starbucks","kepsa"];
 
   return (
     <>
-     <Heading/>
-     <ListItems/>
+     <Heading items={foodlist}/>
+     <ListItems items={foodlist}/>
     </>
   )
 }
